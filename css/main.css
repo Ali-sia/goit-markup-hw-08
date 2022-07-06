@@ -319,6 +319,16 @@ textarea {
     width: 480px;
   }
 }
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 .visually-hidden {
   position: absolute;
@@ -473,6 +483,18 @@ textarea {
   border-radius: 4px;
 }
 
+.occupation {
+  padding-bottom: 94px;
+}
+@media screen and (max-width: 1199px) {
+  .occupation {
+    display: none;
+  }
+}
+
+.occupation-list {
+  display: flex;
+}
 .occupation-list__thumb {
   position: relative;
 }
@@ -481,6 +503,11 @@ textarea {
   right: 0;
   left: 0;
   bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 70px;
   background: rgba(47, 48, 58, 0.8);
   color: #ffffff;
   font-weight: 700;
@@ -488,6 +515,10 @@ textarea {
   text-align: center;
   text-transform: uppercase;
 }
+.occupation-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .social-list {
   display: flex;
   justify-content: center;

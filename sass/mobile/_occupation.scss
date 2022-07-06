@@ -1,9 +1,13 @@
 .occupation {
-  // padding-bottom: 94px;
+  padding-bottom: 94px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
 }
 
 .occupation-list {
-  // display: flex;
+  display: flex;
 
   &__thumb {
     position: relative;
@@ -15,13 +19,13 @@
     left: 0;
     bottom: 0;
 
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    // margin: 0;
+    margin: 0;
 
-    // height: 70px;
+    height: 70px;
 
     background: $occupation-background-color;
 
@@ -33,6 +37,6 @@
   }
 
   &__item:not(:last-child) {
-    // margin-right: 30px;
+    margin-right: 30px;
   }
 }
