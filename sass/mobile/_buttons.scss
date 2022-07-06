@@ -1,6 +1,6 @@
 .button {
-  // padding: 6px 22px;
-  // min-width: 73px;
+  padding: 6px 22px;
+  min-width: 73px;
 
   cursor: pointer;
 
@@ -24,9 +24,9 @@
   @include hover-dely-two(background-color, box-shadow);
 
   &--primary {
-    // padding: 10px 32px;
-    // min-width: 200px;
-    // min-height: 50px;
+    padding: 10px 32px;
+    min-width: 200px;
+    min-height: 50px;
 
     background-color: $btn-accent-background;
     color: $btn-accent-color;

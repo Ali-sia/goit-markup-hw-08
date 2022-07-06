@@ -353,6 +353,8 @@ textarea {
 }
 
 .button {
+  padding: 6px 22px;
+  min-width: 73px;
   cursor: pointer;
   color: #000000;
   background-color: #f5f4fa;
@@ -370,6 +372,9 @@ textarea {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 .button--primary {
+  padding: 10px 32px;
+  min-width: 200px;
+  min-height: 50px;
   background-color: #2196f3;
   color: #ffffff;
   font-weight: 700;
@@ -452,6 +457,9 @@ textarea {
 }
 
 .hero {
+  padding: 118px 0;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
   background-color: #c4c4c4;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bgi.png);
@@ -459,13 +467,25 @@ textarea {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
 .hero__title {
+  margin-bottom: 30px;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .features-list__title {
