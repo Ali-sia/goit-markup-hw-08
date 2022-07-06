@@ -1,0 +1,41 @@
+.clients {
+  padding: 94px 0;
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid $border-clients-color;
+    border-radius: 4px;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100%;
+
+    fill: $clients-icon-color;
+
+    @include hover-dely-two(border-color, fill);
+  }
+
+  &__item:hover,
+  &__item:focus,
+  &__link:hover,
+  &__link:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
+}
