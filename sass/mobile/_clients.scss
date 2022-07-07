@@ -14,22 +14,15 @@
   margin: -15px;
 
   &__item {
-    border: 1px solid $border-clients-color;
-    border-radius: 4px;
+    width: calc((100% - 2 * 30px) / 2);
+    min-height: 92px;
+    margin: 15px;
 
-    @media screen and (min-width: 480px) {
-      width: calc((100% - 2 * 30px) / 2);
-      min-height: 92px;
-
-      margin: 15px;
-    }
     @media screen and (min-width: 768px) {
       width: calc((100% - 4 * 30px) / 3);
-      margin: 15px;
     }
     @media screen and (min-width: 1200px) {
       width: calc((100% - 7 * 30px) / 6);
-      margin: 15px;
     }
 
     @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -42,6 +35,9 @@
         margin-bottom: 30px;
       }
     }
+
+    border: 1px solid $border-clients-color;
+    border-radius: 4px;
   }
 
   &__link {
