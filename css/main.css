@@ -358,13 +358,15 @@ textarea {
   margin-bottom: 30px;
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
 }
 @media screen and (min-width: 1200px) {
   .title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
   }
 }
 
@@ -717,6 +719,16 @@ textarea {
   .team-list__holder {
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding: 94px 0;
   }
 }
 

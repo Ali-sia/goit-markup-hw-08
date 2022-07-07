@@ -96,11 +96,15 @@ textarea {
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
   }
 
   color: $title-text-color;
+
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
 }
