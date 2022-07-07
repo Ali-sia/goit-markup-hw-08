@@ -404,6 +404,11 @@ textarea {
   background-color: #188ce8;
 }
 
+.button--footer {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
 .button--footer__icon {
   margin-left: 10px;
   fill: #ffffff;
@@ -791,17 +796,21 @@ textarea {
   font-size: 14px;
   line-height: 1.14;
 }
+
+@media screen and (min-width: 768px) {
+  .container--footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
 @media screen and (max-width: 1199px) {
-  .footer__title {
+  .container--footer {
     text-align: center;
   }
 }
 
-.container--footer {
-  text-align: center;
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .address,
 .join {
     margin-bottom: 60px;
@@ -838,9 +847,18 @@ textarea {
   color: rgba(33, 150, 243, 0.6);
 }
 
+@media screen and (min-width: 768px) {
+  .join {
+    padding-top: 10px;
+  }
+}
+
+.mailing {
+  max-width: 450px;
+}
 .mailing__input {
   padding: 15px 0 15px 16px;
-  width: 100%;
+  min-width: 450px;
   color: #ffffff;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
