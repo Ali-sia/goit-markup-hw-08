@@ -1,23 +1,43 @@
 .footer {
-  // padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
   background-color: $footer-background-color;
 
   &__title {
-    // display: block;
+    display: block;
 
-    // margin-bottom: 20px;
+    margin-bottom: 20px;
 
     color: $footer-color;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+
+    @media screen and (max-width: 1199px) {
+      text-align: center;
+    }
   }
 }
 
 .container--footer {
   // display: flex;
+  text-align: center;
+
+  // @media screen and (min-width: 480px) {
+  // }
+  // @media screen and (min-width: 768px) {
+  // }
+  // @media screen and (min-width: 1200px) {
+  // }
+}
+
+.address,
+.join {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
 }
 
 .address {
@@ -26,22 +46,26 @@
 
   &__text {
     // display: block;
-
-    // margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
 
     color: $footer-color;
   }
 
   &__link {
-    // display: block;
+    display: block;
 
     color: $footer-link-color;
 
     @include hover-dely(color);
   }
-
   &__link:not(:last-child) {
-    // margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
 
   &__link:hover,
@@ -62,11 +86,17 @@
   // min-width: 570px;
 
   &__input {
-    // margin-right: 12px;
-    // padding: 15px 0 15px 16px;
+    padding: 15px 0 15px 16px;
 
     // width: 358px;
     // height: 50px;
+    width: 100%;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: 12px;
+    }
 
     color: $footer-color;
     background-color: inherit;
