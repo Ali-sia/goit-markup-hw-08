@@ -26,12 +26,6 @@
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
-
-  // @media screen and (min-width: 480px) {
-  // }
-
-  // @media screen and (min-width: 1200px) {
-  // }
 }
 
 .address,
@@ -44,6 +38,10 @@
 .address {
   font-size: 14px;
   line-height: 1.71;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 85px;
+  }
 
   &__text {
     // display: block;
@@ -85,27 +83,27 @@
 
 .mailing {
   // padding-top: 15px;
-  // margin-left: auto;
 
-  // min-width: 570px;
+  @media screen and (max-width: 1199px) {
+    min-width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    padding-top: 10px;
 
-  //        display: flex;
-  //        flex-wrap: wrap;
-  //        justify-content: space-around;
-
-  max-width: 450px;
+    min-width: 570px;
+  }
 
   &__input {
     padding: 15px 0 15px 16px;
 
-    // width: 358px;
-    // height: 50px;
-    min-width: 450px;
+    min-width: 100%;
     @media screen and (max-width: 1199px) {
       margin-bottom: 20px;
     }
     @media screen and (min-width: 1200px) {
       margin-right: 12px;
+      min-width: 358px;
     }
 
     color: $footer-color;

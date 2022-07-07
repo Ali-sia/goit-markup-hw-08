@@ -821,6 +821,11 @@ textarea {
   font-size: 14px;
   line-height: 1.71;
 }
+@media screen and (min-width: 1200px) {
+  .address {
+    margin-right: 85px;
+  }
+}
 .address__text {
   margin-bottom: 8px;
   color: #ffffff;
@@ -853,12 +858,21 @@ textarea {
   }
 }
 
-.mailing {
-  max-width: 450px;
+@media screen and (max-width: 1199px) {
+  .mailing {
+    min-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mailing {
+    margin-left: auto;
+    padding-top: 10px;
+    min-width: 570px;
+  }
 }
 .mailing__input {
   padding: 15px 0 15px 16px;
-  min-width: 450px;
+  min-width: 100%;
   color: #ffffff;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -874,6 +888,7 @@ textarea {
 @media screen and (min-width: 1200px) {
   .mailing__input {
     margin-right: 12px;
+    min-width: 358px;
   }
 }
 .mailing__input::-moz-placeholder {
