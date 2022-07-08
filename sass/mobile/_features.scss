@@ -1,10 +1,10 @@
 .features {
-  // padding: 60px 0;
   padding-top: 60px;
   padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -15,32 +15,30 @@
   }
 
   &__item {
+    max-width: 450px;
     @media screen and (min-width: 768px) {
-      max-width: 354px;
+      width: calc((100% - 1 * 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 3 * 30px) / 4);
+
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
 
-    @media screen and (min-width: 1199px) {
-      max-width: 270px;
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
-  }
-
-  @media screen and (min-width: 480px) and (max-width: 767px) {
-    &__item:not(:last-child) {
-      margin-bottom: 30px;
-    }
-  }
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    &__item:not(:nth-last-child(-n + 2)) {
-      margin-bottom: 30px;
-    }
-    &__item:nth-child(odd) {
-      margin-right: 30px;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-    &__item:not(:last-child) {
-      margin-right: 30px;
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
     }
   }
 

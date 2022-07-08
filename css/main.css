@@ -528,7 +528,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .features {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -538,14 +539,20 @@ textarea {
     flex-wrap: wrap;
   }
 }
+.features-list__item {
+  max-width: 450px;
+}
 @media screen and (min-width: 768px) {
   .features-list__item {
-    max-width: 354px;
+    width: calc((100% - 30px) / 2);
   }
 }
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .features-list__item {
-    max-width: 270px;
+    width: calc((100% - 90px) / 4);
+  }
+  .features-list__item:not(:last-child) {
+    margin-right: 30px;
   }
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
@@ -558,11 +565,6 @@ textarea {
     margin-bottom: 30px;
   }
   .features-list__item:nth-child(odd) {
-    margin-right: 30px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .features-list__item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -669,7 +671,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .team {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -731,7 +734,8 @@ textarea {
 }
 @media screen and (min-width: 1200px) {
   .clients {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
