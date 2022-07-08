@@ -681,11 +681,10 @@ textarea {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: -15px;
   }
 }
 .team-list__item {
-  margin-bottom: 30px;
+  max-width: 450px;
   text-align: center;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -693,14 +692,31 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .team-list__item {
-    width: calc((100% - 90px) / 2);
-    margin: 15px;
+    width: calc((100% - 30px) / 2);
   }
 }
 @media screen and (min-width: 1200px) {
   .team-list__item {
-    width: calc((100% - 150px) / 4);
-    margin: 15px;
+    width: calc((100% - 90px) / 4);
+  }
+  .team-list__item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .team-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .team-list__item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 30px;
+  }
+  .team-list__item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .team-list__item:last-child {
+    margin-right: auto;
   }
 }
 .team-list__title {
