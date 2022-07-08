@@ -3,7 +3,8 @@
   padding-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
-    padding: 94px 0;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -33,8 +34,6 @@
 }
 
 .portfolio-list {
-  margin: -15px;
-
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
@@ -42,33 +41,44 @@
   }
 
   &__item {
-    margin-bottom: 30px;
-
+    max-width: 450px;
     @media screen and (min-width: 768px) {
-      width: calc((100% - 3 * 30px) / 2);
-      margin: 15px;
-
-      &:last-child {
-        // width: calc((100% - 2 * 30px) / 1);
-        // margin: 15px;
-      }
+      width: calc((100% - 1 * 30px) / 2);
     }
     @media screen and (min-width: 1200px) {
-      width: calc((100% - 4 * 30px) / 3);
-      margin: 15px;
+      width: calc((100% - 2 * 30px) / 3);
+
+      &:not(:nth-child(3n)) {
+        margin-right: 30px;
+      }
+      &:not(:nth-last-child(-n + 3)) {
+        margin-bottom: 30px;
+      }
     }
+
+    @media screen and (min-width: 480px) and (max-width: 767px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      &:not(:nth-last-child(1)) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(odd) {
+        margin-right: 30px;
+      }
+      &:last-child {
+        margin-right: auto;
+      }
+    }
+    // @media screen and (min-width: 1200px) {
+
+    // }
 
     border: 1px solid $border-portfolio-color;
 
     @include hover-dely(box-shadow);
-  }
-
-  &__item:not(:nth-child(3n)) {
-    // margin-right: 30px;
-  }
-
-  &__item:not(:nth-last-child(-n + 3)) {
-    // margin-bottom: 20px;
   }
 
   &__item:hover,
@@ -78,11 +88,11 @@
   }
 
   &__caption {
-    // padding: 20px 24px;
+    padding: 20px 24px;
   }
 
   &__title {
-    // margin-bottom: 4px;
+    margin-bottom: 4px;
 
     color: $title-text-color;
     font-size: 18px;
