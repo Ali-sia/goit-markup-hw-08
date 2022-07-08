@@ -1,12 +1,48 @@
 .header {
+  position: relative;
+
   display: block;
   border-bottom: 1px solid $border-navigation-color;
+
+  &__button {
+    display: inline-flex;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+  }
+  &__icon--close {
+    display: none;
+  }
+  &__button--is-open &__icon--close {
+    display: block;
+  }
+  &__button--is-open &__icon--menu {
+    display: none;
+  }
+}
+
+.menu-container {
+  display: none;
+
+  position: absolute;
+  left: 0;
+  top: 100%;
+
+  width: 100%;
+
+  background-color: chartreuse;
+
+  &--is-open {
+    display: block;
+  }
 }
 
 .main-navigation {
-  // display: flex;
-  // justify-content: flex-start;
-  // align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  min-height: 60px;
 
   &__link {
     padding: 32px 0;
@@ -70,15 +106,15 @@
   }
 
   &__link {
-    // display: flex;
-    // align-items: center;
-    // justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     color: $primary-text-color;
   }
 
   &__icon {
-    // margin-right: 10px;
+    margin-right: 10px;
     fill: currentColor;
   }
 }

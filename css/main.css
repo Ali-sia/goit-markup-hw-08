@@ -416,10 +416,18 @@ textarea {
 
 .logo {
   display: inline-block;
+  padding-top: 16px;
+  padding-bottom: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
+}
+@media screen and (min-width: 768px) {
+  .logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
@@ -448,10 +456,44 @@ textarea {
 }
 
 .header {
+  position: relative;
   display: block;
   border-bottom: 1px solid #ececec;
 }
+.header__button {
+  display: inline-flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+.header__icon--close {
+  display: none;
+}
+.header__button--is-open .header__icon--close {
+  display: block;
+}
+.header__button--is-open .header__icon--menu {
+  display: none;
+}
 
+.menu-container {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  background-color: chartreuse;
+}
+.menu-container--is-open {
+  display: block;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
 .main-navigation__link {
   padding: 32px 0;
   font-weight: 500;
@@ -484,9 +526,13 @@ textarea {
   fill: #757575;
 }
 .contact-navigation__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: #757575;
 }
 .contact-navigation__icon {
+  margin-right: 10px;
   fill: currentColor;
 }
 
