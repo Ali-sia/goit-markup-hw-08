@@ -155,16 +155,10 @@
 }
 
 .contact-navigation {
+  margin-left: auto;
   @media screen and (max-width: 767px) {
     &__icon {
       display: none;
-    }
-
-    flex-direction: column;
-    align-items: flex-start;
-
-    &__item:not(:last-child) {
-      margin-bottom: 10px;
     }
 
     &__link {
@@ -181,11 +175,14 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
-
-    margin-left: auto;
+    flex-direction: column;
+    align-items: flex-start;
 
     &__item {
       fill: $primary-text-color;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 10px;
     }
 
     &__link {
@@ -204,10 +201,8 @@
     }
   }
   @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-
-    margin-left: auto;
+    // display: flex;
+    // align-items: center;
 
     &__item:not(:last-child) {
       margin-right: 30px;
