@@ -41,11 +41,14 @@
     position: absolute;
     left: 0;
     top: 100%;
-    // z-index: 10;
 
     overflow-y: scroll;
 
+    padding-left: 40px;
+
     width: 100%;
+
+    min-height: 570px;
     max-height: 796px;
 
     background-color: $main-background-color;
@@ -73,6 +76,14 @@
   align-items: center;
   @media screen and (max-width: 767px) {
     justify-content: space-between;
+
+    &__link {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 1.18;
+      letter-spacing: 0.02em;
+      color: $logo-color;
+    }
   }
 
   @media screen and (min-width: 768px) {
@@ -103,6 +114,12 @@
 }
 
 .site-navigation {
+  @media screen and (max-width: 767px) {
+    &__link--active {
+      color: $accent-color;
+    }
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -148,6 +165,17 @@
 
     &__item:not(:last-child) {
       margin-bottom: 10px;
+    }
+
+    &__link {
+      font-size: 34px;
+      color: $accent-color;
+    }
+
+    &__item:last-child &__link {
+      font-size: 24px;
+      line-height: 1.17;
+      color: $primary-text-color;
     }
   }
 
