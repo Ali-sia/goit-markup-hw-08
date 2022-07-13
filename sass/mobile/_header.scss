@@ -64,17 +64,17 @@
     padding-left: 40px;
 
     width: 100%;
-
     min-height: 570px;
     max-height: 796px;
 
     background-color: $main-background-color;
 
-    // transform: translateY(-100%);
+    // transform: translateX(100%);
 
-    // @include hover-dely(transform);
     &--is-open {
       display: block;
+      // transform: translateX(0);
+      // @include hover-dely(transform);
     }
   }
 
