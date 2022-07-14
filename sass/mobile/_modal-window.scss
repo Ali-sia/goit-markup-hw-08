@@ -4,12 +4,12 @@
   left: 0;
 
   // overflow: auto;
-  overflow-y: scroll;
+  // overflow-y: scroll;
 
-  padding: 94px 15px;
-  @media screen and (min-width: 768px) {
-    padding: 208px 159px;
-  }
+  // padding: 94px 15px;
+  // @media screen and (min-width: 768px) {
+  //   padding: 208px 159px;
+  // }
   // @media screen and (min-width: 768px) {
   //   padding: 208px 159px;
   // }
@@ -31,18 +31,26 @@
 }
 
 .modal {
-  @media screen and (min-width: 1200px) {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+  // @media screen and (min-width: 1200px) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
-    transform: translate(-50%, -50%);
-  }
+  transform: translate(-50%, -50%);
+  // }
 
   padding-bottom: 40px;
 
+  max-height: 609px;
   max-width: 450px;
+
+  height: 100%;
+  width: 100%;
+
+  overflow-y: auto;
+
   @media screen and (min-width: 1200px) {
+    max-height: 581px;
     max-width: 528px;
   }
 
