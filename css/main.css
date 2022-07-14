@@ -1073,7 +1073,12 @@ textarea {
   }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 479px) {
+  .mailing {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .mailing {
     min-width: 450px;
   }
