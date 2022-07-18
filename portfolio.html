@@ -126,7 +126,6 @@
         <li class="filter-list__item">
           <button class="button button--secondary" type="button">Додатки</button>
         </li>
-        <!-- <li class="filter-list__item"><div class="line-break"></div></li> -->
         <li class="filter-list__item">
           <button class="button button--secondary" type="button">Дизайн</button>
         </li>
@@ -139,11 +138,24 @@
         <li class="portfolio-list__item">
           <a class="portfolio-list__link" href="">
             <div class="portfolio-list__thumb">
-              <img
+              <!-- <img
                 srcset="./images/technokryak.jpg 320w, ./images/technokryak@2x.jpg 640w"
                 src="./images/technokryak.jpg"
                 alt="Веб-сайт"
                 sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
+              /> -->
+              <!-- sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 30vw, (min-width: 768px) 46vw, 100vw" -->
+              <img
+                srcset="
+                  ./images/technokryak-354.jpg 354w,
+                  ./images/technokryak-370.jpg 370w,
+                  ./images/technokryak-450.jpg 450w
+                "
+                src="./images/technokryak-354.jpg"
+                alt="Веб-сайт"
+                sizes="((max-width: 1200px) and (min-width: 768px)) 30vw, 
+                ((max-width: 767px) and (min-width: 481px)) 30vw, 
+                ((max-width: 480px) 100vw"
               />
               <div class="portfolio-list__overlay">
                 <div class="portfolio-list__text">
