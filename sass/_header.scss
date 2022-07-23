@@ -1,6 +1,7 @@
 body {
   margin-top: 60px;
   &.menu-container--is-open {
+    // position: fixed;
     overflow: hidden;
   }
 }
@@ -154,6 +155,7 @@ body {
 
     &__item:last-child {
       margin-bottom: clamp(50px, 20%, 302px);
+      // margin-bottom: max(302px, 5%);
     }
   }
 
