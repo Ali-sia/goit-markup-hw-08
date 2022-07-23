@@ -23,7 +23,7 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/bgi-mobile@x2.jpg);
+      url(../images/bgi-mobile@2x.jpg);
   }
 
   @media screen and (min-width: 768px) {
@@ -34,7 +34,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/bgi-tablet@x2.jpg);
+        url(../images/bgi-tablet@2x.jpg);
     }
   }
 
@@ -46,7 +46,7 @@
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url(../images/bgi@x2.jpg);
+        url(../images/bgi@2x.jpg);
     }
   }
 

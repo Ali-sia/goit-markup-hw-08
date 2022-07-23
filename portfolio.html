@@ -138,25 +138,36 @@
         <li class="portfolio-list__item">
           <a class="portfolio-list__link" href="">
             <div class="portfolio-list__thumb">
-              <!-- <img
-                srcset="./images/technokryak.jpg 320w, ./images/technokryak@2x.jpg 640w"
-                src="./images/technokryak.jpg"
-                alt="Веб-сайт"
-                sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              /> -->
-              <!-- sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 30vw, (min-width: 768px) 46vw, 100vw" -->
-              <img
-                srcset="
-                  ./images/technokryak-354.jpg 354w,
-                  ./images/technokryak-370.jpg 370w,
-                  ./images/technokryak-450.jpg 450w
-                "
-                src="./images/technokryak-354.jpg"
-                alt="Веб-сайт"
-                sizes="((max-width: 1200px) and (min-width: 768px)) 30vw, 
-                ((max-width: 767px) and (min-width: 481px)) 30vw, 
-                ((max-width: 480px) 100vw"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/technokryak-450.jpg     450w,
+                    ./images/technokryak-450@2x.jpg  900w,
+                    ./images/technokryak-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/technokryak-354.jpg     354w,
+                    ./images/technokryak-354@2x.jpg  708w,
+                    ./images/technokryak-354@3x.jpg 1062w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/technokryak-370.jpg     370w,
+                    ./images/technokryak-370@2x.jpg  740w,
+                    ./images/technokryak-370@3x.jpg 1110w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 30vw"
+                />
+                <img src="./images/technokryak-450.jpg" alt="Веб-сайт" />
+              </picture>
               <div class="portfolio-list__overlay">
                 <div class="portfolio-list__text">
                   <p>
@@ -176,12 +187,36 @@
         <li class="portfolio-list__item">
           <a class="portfolio-list__link" href="">
             <div class="portfolio-list__thumb">
-              <img
-                srcset="./images/poster.jpg 320w, ./images/poster@2x.jpg 640w"
-                src="./images/poster.jpg"
-                alt="Постер с баскетболистами"
-                sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/poster-450.jpg     450w,
+                    ./images/poster-450@2x.jpg  900w,
+                    ./images/poster-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/poster-354.jpg     354w,
+                    ./images/poster-354@2x.jpg  708w,
+                    ./images/poster-354@3x.jpg 1062w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/poster-370.jpg     370w,
+                    ./images/poster-370@2x.jpg  740w,
+                    ./images/poster-370@3x.jpg 1110w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 30vw"
+                />
+                <img src="./images/poster-450.jpg" alt="Постер с баскетболистами" />
+              </picture>
               <div class="portfolio-list__overlay">
                 <div class="portfolio-list__text">
                   <p>
@@ -201,15 +236,36 @@
         <li class="portfolio-list__item">
           <a class="portfolio-list__link" href="">
             <div class="portfolio-list__thumb">
-              <img
-                srcset="
-                  ./images/restaurant-seafood.jpg    320w,
-                  ./images/restaurant-seafood@2x.jpg 640w
-                "
-                src="./images/restaurant-seafood.jpg"
-                alt="Постер ресторану"
-                sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/restaurant-seafood-450.jpg     450w,
+                    ./images/restaurant-seafood-450@2x.jpg  900w,
+                    ./images/restaurant-seafood-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/restaurant-seafood-354.jpg     354w,
+                    ./images/restaurant-seafood-354@2x.jpg  708w,
+                    ./images/restaurant-seafood-354@3x.jpg 1062w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/restaurant-seafood-370.jpg     370w,
+                    ./images/restaurant-seafood-370@2x.jpg  740w,
+                    ./images/restaurant-seafood-370@3x.jpg 1110w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 30vw"
+                />
+                <img src="./images/restaurant-seafood-450.jpg" alt="Постер ресторану" />
+              </picture>
               <div class="portfolio-list__overlay">
                 <div class="portfolio-list__text">
                   <p>
@@ -229,12 +285,36 @@
         <li class="portfolio-list__item">
           <a class="portfolio-list__link" href="">
             <div class="portfolio-list__thumb">
-              <img
-                srcset="./images/project-prime.jpg 320w, ./images/project-prime@2x.jpg 640w"
-                src="./images/project-prime.jpg"
-                alt="Навушники"
-                sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/project-prime-450.jpg     450w,
+                    ./images/project-prime-450@2x.jpg  900w,
+                    ./images/project-prime-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/project-prime-354.jpg     354w,
+                    ./images/project-prime-354@2x.jpg  708w,
+                    ./images/project-prime-354@3x.jpg 1062w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/project-prime-370.jpg     370w,
+                    ./images/project-prime-370@2x.jpg  740w,
+                    ./images/project-prime-370@3x.jpg 1110w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 30vw"
+                />
+                <img src="./images/project-prime-450.jpg" alt="Навушники" />
+              </picture>
               <div class="portfolio-list__overlay">
                 <div class="portfolio-list__text">
                   <p>
@@ -254,12 +334,36 @@
         <li class="portfolio-list__item">
           <a class="portfolio-list__link" href="">
             <div class="portfolio-list__thumb">
-              <img
-                srcset="./images/project-boxes.jpg 320w, ./images/project-boxes@2x.jpg 640w"
-                src="./images/project-boxes.jpg"
-                alt="Коробки"
-                sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/project-boxes-450.jpg     450w,
+                    ./images/project-boxes-450@2x.jpg  900w,
+                    ./images/project-boxes-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/project-boxes-354.jpg     354w,
+                    ./images/project-boxes-354@2x.jpg  708w,
+                    ./images/project-boxes-354@3x.jpg 1062w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/project-boxes-370.jpg     370w,
+                    ./images/project-boxes-370@2x.jpg  740w,
+                    ./images/project-boxes-370@3x.jpg 1110w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 30vw"
+                />
+                <img src="./images/project-boxes-450.jpg" alt="Коробки" />
+              </picture>
               <div class="portfolio-list__overlay">
                 <div class="portfolio-list__text">
                   <p>
@@ -279,12 +383,36 @@
         <li class="portfolio-list__item">
           <a class="portfolio-list__link" href="">
             <div class="portfolio-list__thumb">
-              <img
-                srcset="./images/inspiration.jpg 320w, ./images/inspiration@2x.jpg 640w"
-                src="./images/inspiration.jpg"
-                alt="Монітор"
-                sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/inspiration-450.jpg     450w,
+                    ./images/inspiration-450@2x.jpg  900w,
+                    ./images/inspiration-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/inspiration-354.jpg     354w,
+                    ./images/inspiration-354@2x.jpg  708w,
+                    ./images/inspiration-354@3x.jpg 1062w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/inspiration-370.jpg     370w,
+                    ./images/inspiration-370@2x.jpg  740w,
+                    ./images/inspiration-370@3x.jpg 1110w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 30vw"
+                />
+                <img src="./images/inspiration-450.jpg" alt="Монітор" />
+              </picture>
               <div class="portfolio-list__overlay">
                 <div class="portfolio-list__text">
                   <p>
@@ -304,12 +432,36 @@
         <li class="portfolio-list__item">
           <a class="portfolio-list__link" href="">
             <div class="portfolio-list__thumb">
-              <img
-                srcset="./images/edition-limited.jpg 320w, ./images/edition-limited@2x.jpg 640w"
-                src="./images/edition-limited.jpg"
-                alt="Книга"
-                sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/edition-limited-450.jpg     450w,
+                    ./images/edition-limited-450@2x.jpg  900w,
+                    ./images/edition-limited-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/edition-limited-354.jpg     354w,
+                    ./images/edition-limited-354@2x.jpg  708w,
+                    ./images/edition-limited-354@3x.jpg 1062w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/edition-limited-370.jpg     370w,
+                    ./images/edition-limited-370@2x.jpg  740w,
+                    ./images/edition-limited-370@3x.jpg 1110w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 30vw"
+                />
+                <img src="./images/edition-limited-450.jpg" alt="Книга" />
+              </picture>
               <div class="portfolio-list__overlay">
                 <div class="portfolio-list__text">
                   <p>
@@ -329,12 +481,36 @@
         <li class="portfolio-list__item">
           <a class="portfolio-list__link" href="">
             <div class="portfolio-list__thumb">
-              <img
-                srcset="./images/project-lab.jpg 320w, ./images/project-lab@2x.jpg 640w"
-                src="./images/project-lab.jpg"
-                alt="Бірка з назвою"
-                sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/project-lab-450.jpg     450w,
+                    ./images/project-lab-450@2x.jpg  900w,
+                    ./images/project-lab-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/project-lab-354.jpg     354w,
+                    ./images/project-lab-354@2x.jpg  708w,
+                    ./images/project-lab-354@3x.jpg 1062w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/project-lab-370.jpg     370w,
+                    ./images/project-lab-370@2x.jpg  740w,
+                    ./images/project-lab-370@3x.jpg 1110w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 30vw"
+                />
+                <img src="./images/project-lab-450.jpg" alt="Бірка з назвою" />
+              </picture>
               <div class="portfolio-list__overlay">
                 <div class="portfolio-list__text">
                   <p>
@@ -354,12 +530,36 @@
         <li class="portfolio-list__item">
           <a class="portfolio-list__link" href="">
             <div class="portfolio-list__thumb">
-              <img
-                srcset="./images/growing-business.jpg 320w, ./images/growing-business@2x.jpg 640w"
-                src="./images/growing-business.jpg"
-                alt="Ноутбук"
-                sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 33vw, (min-width: 768px) 50vw, 100vw"
-              />
+              <picture
+                ><source
+                  srcset="
+                    ./images/growing-business-450.jpg     450w,
+                    ./images/growing-business-450@2x.jpg  900w,
+                    ./images/growing-business-450@3x.jpg 1350w
+                  "
+                  media="(max-width: 767px)"
+                  sizes="(min-width: 480px) 450px, 100vw"
+                />
+                <source
+                  srcset="
+                    ./images/growing-business-354.jpg     354w,
+                    ./images/growing-business-354@2x.jpg  708w,
+                    ./images/growing-business-354@3x.jpg 1062w
+                  "
+                  media="(min-width: 768px)"
+                  sizes="(min-width: 768px) 354px, 46vw"
+                />
+                <source
+                  srcset="
+                    ./images/growing-business-370.jpg     370w,
+                    ./images/growing-business-370@2x.jpg  740w,
+                    ./images/growing-business-370@3x.jpg 1110w
+                  "
+                  media="(min-width: 1200px)"
+                  sizes="(min-width: 1200px) 370px, 30vw"
+                />
+                <img src="./images/growing-business-450.jpg" alt="Ноутбук" />
+              </picture>
               <div class="portfolio-list__overlay">
                 <div class="portfolio-list__text">
                   <p>
