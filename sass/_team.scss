@@ -19,6 +19,7 @@
 
   &__item {
     max-width: 450px;
+    min-height: 428px;
 
     @media screen and (min-width: 768px) {
       width: calc((100% - 1 * 30px) / 2);

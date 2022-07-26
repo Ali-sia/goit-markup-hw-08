@@ -6,12 +6,15 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 
+  margin-top: 60px;
+
   .modal-open {
     overflow: hidden;
   }
-  // @media screen and (max-width: 767px) {
-  //   position: relative;
-  // }
+
+  &.menu-container--is-open {
+    overflow: hidden;
+  }
 }
 
 p,

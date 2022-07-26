@@ -62,23 +62,13 @@
     @include hover-dely-two(border-color, fill);
   }
 
-  // &__item:hover,
-  // &__item:focus,
-  // &__item:hover &__icon,
-  // &__item:focus &__icon {
-  //   outline: none;
-  //   fill: $accent-color;
-  //   border-color: $accent-color;
-  // }
-
-  &__item:hover,
-  &__item:focus,
-  &__item:hover &__link,
-  &__item:focus &__link,
-  &__item:hover &__icon,
-  &__item:focus &__icon {
+  &__link:hover,
+  &__link:focus {
     outline: none;
+    border: 1px solid $accent-color;
+  }
+  &__link:hover &__icon,
+  &__link:focus &__icon {
     fill: $accent-color;
-    border-color: $accent-color;
   }
 }
