@@ -58,61 +58,63 @@
                 <a class="main-navigation__link site-navigation__link" href="#">Контакти</a>
               </li>
             </ul>
-            <!-- for desktop-tablet -->
-            <ul class="contact-navigation">
-              <li class="contact-navigation__item">
-                <a
-                  class="contact-navigation__link main-navigation__link"
-                  href="mailto:info@devstudio.com"
-                >
-                  <svg class="contact-navigation__icon" width="16" height="12">
-                    <use href="./images/icons1.svg#icon-envelope"></use>
-                  </svg>
-                  info@devstudio.com</a
-                >
-              </li>
-              <li class="contact-navigation__item">
-                <a class="contact-navigation__link main-navigation__link" href="tel:+380961111111"
-                  ><svg class="contact-navigation__icon" width="10" height="16">
-                    <use href="./images/icons1.svg#icon-smartphone"></use>
-                  </svg>
-                  +38 096 111 11 11</a
-                >
-              </li>
-            </ul>
-            <!-- /for desktop-tablet -->
-            <!-- for mobile -->
-            <ul class="contact-navigation-mobile">
-              <li class="contact-navigation-mobile__item">
-                <a
-                  class="contact-navigation-mobile__link main-navigation__link"
-                  href="tel:+380961111111"
-                >
-                  +38 096 111 11 11</a
-                >
-              </li>
-              <li class="contact-navigation-mobile__item">
-                <a
-                  class="contact-navigation-mobile__link main-navigation__link"
-                  href="mailto:info@devstudio.com"
-                >
-                  info@devstudio.com</a
-                >
-              </li>
-            </ul>
-            <ul class="mobile-menu-list">
-              <li class="mobile-menu-list__item">
-                Instagram<span class="mobile-menu-list__separator">|</span>
-              </li>
-              <li class="mobile-menu-list__item">
-                Twitter<span class="mobile-menu-list__separator">|</span>
-              </li>
-              <li class="mobile-menu-list__item">
-                Facebook<span class="mobile-menu-list__separator">|</span>
-              </li>
-              <li class="mobile-menu-list__item">LinkedIn</li>
-            </ul>
-            <!-- /for mobile -->
+            <div class="menu-container__wrap">
+              <!-- for desktop-tablet -->
+              <ul class="contact-navigation">
+                <li class="contact-navigation__item">
+                  <a
+                    class="contact-navigation__link main-navigation__link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    <svg class="contact-navigation__icon" width="16" height="12">
+                      <use href="./images/icons1.svg#icon-envelope"></use>
+                    </svg>
+                    info@devstudio.com</a
+                  >
+                </li>
+                <li class="contact-navigation__item">
+                  <a class="contact-navigation__link main-navigation__link" href="tel:+380961111111"
+                    ><svg class="contact-navigation__icon" width="10" height="16">
+                      <use href="./images/icons1.svg#icon-smartphone"></use>
+                    </svg>
+                    +38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <!-- /for desktop-tablet -->
+              <!-- for mobile -->
+              <ul class="contact-navigation-mobile">
+                <li class="contact-navigation-mobile__item">
+                  <a
+                    class="contact-navigation-mobile__link main-navigation__link"
+                    href="tel:+380961111111"
+                  >
+                    +38 096 111 11 11</a
+                  >
+                </li>
+                <li class="contact-navigation-mobile__item">
+                  <a
+                    class="contact-navigation-mobile__link main-navigation__link"
+                    href="mailto:info@devstudio.com"
+                  >
+                    info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile-menu-list">
+                <li class="mobile-menu-list__item">
+                  Instagram<span class="mobile-menu-list__separator">|</span>
+                </li>
+                <li class="mobile-menu-list__item">
+                  Twitter<span class="mobile-menu-list__separator">|</span>
+                </li>
+                <li class="mobile-menu-list__item">
+                  Facebook<span class="mobile-menu-list__separator">|</span>
+                </li>
+                <li class="mobile-menu-list__item">LinkedIn</li>
+              </ul>
+              <!-- /for mobile -->
+            </div>
           </div>
           <!-- </div> -->
         </nav>
@@ -242,12 +244,36 @@
         <h2 class="title">Наша команда</h2>
         <ul class="team-list">
           <li class="team-list__item">
-            <img
-              srcset="./images/product-designer@2x.jpg 320w, ./images/product-designer.jpg 640w"
-              src="./images/product-designer@2x.jpg"
-              alt="Фото Игоря Демьяненко"
-              sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-            />
+            <picture
+              ><source
+                srcset="
+                  ./images/product-designer-450.jpg     450w,
+                  ./images/product-designer-450@2x.jpg  900w,
+                  ./images/product-designer-450@3x.jpg 1350w
+                "
+                media="(max-width: 767px)"
+                sizes="(min-width: 480px) 450px, 100vw"
+              />
+              <source
+                srcset="
+                  ./images/product-designer-354.jpg     354w,
+                  ./images/product-designer-354@2x.jpg  708w,
+                  ./images/product-designer-354@3x.jpg 1062w
+                "
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 354px, 46vw"
+              />
+              <source
+                srcset="
+                  ./images/product-designer-370.jpg     370w,
+                  ./images/product-designer-370@2x.jpg  740w,
+                  ./images/product-designer-370@3x.jpg 1110w
+                "
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 370px, 30vw"
+              />
+              <img src="./images/product-designer-450.jpg" alt="Фото Игоря Демьяненко" />
+            </picture>
             <div class="team-list__holder">
               <h2 class="team-list__title">Игорь Демьяненко</h2>
               <span class="team-list__caption">Product Designer</span>
@@ -287,12 +313,36 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img
-              srcset="./images/frontend-developer@2x.jpg 320w, ./images/frontend-developer.jpg 640w"
-              src="./images/frontend-developer@2x.jpg"
-              alt="Фото Ольги Репиной"
-              sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-            />
+            <picture
+              ><source
+                srcset="
+                  ./images/frontend-developer-450.jpg     450w,
+                  ./images/frontend-developer-450@2x.jpg  900w,
+                  ./images/frontend-developer-450@3x.jpg 1350w
+                "
+                media="(max-width: 767px)"
+                sizes="(min-width: 480px) 450px, 100vw"
+              />
+              <source
+                srcset="
+                  ./images/frontend-developer-354.jpg     354w,
+                  ./images/frontend-developer-354@2x.jpg  708w,
+                  ./images/frontend-developer-354@3x.jpg 1062w
+                "
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 354px, 46vw"
+              />
+              <source
+                srcset="
+                  ./images/frontend-developer-370.jpg     370w,
+                  ./images/frontend-developer-370@2x.jpg  740w,
+                  ./images/frontend-developer-370@3x.jpg 1110w
+                "
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 370px, 30vw"
+              />
+              <img src="./images/frontend-developer-450.jpg" alt="Фото Ольги Репиной" />
+            </picture>
             <div class="team-list__holder">
               <h2 class="team-list__title">Ольга Репина</h2>
               <span class="team-list__caption">Frontend Developer</span>
@@ -332,12 +382,36 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img
-              srcset="./images/marketing@2x.jpg 320w, ./images/marketing.jpg 640w"
-              src="./images/marketing@2x.jpg"
-              alt="Фото Николая Тарасова"
-              sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-            />
+            <picture
+              ><source
+                srcset="
+                  ./images/marketing-450.jpg     450w,
+                  ./images/marketing-450@2x.jpg  900w,
+                  ./images/marketing-450@3x.jpg 1350w
+                "
+                media="(max-width: 767px)"
+                sizes="(min-width: 480px) 450px, 100vw"
+              />
+              <source
+                srcset="
+                  ./images/marketing-354.jpg     354w,
+                  ./images/marketing-354@2x.jpg  708w,
+                  ./images/marketing-354@3x.jpg 1062w
+                "
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 354px, 46vw"
+              />
+              <source
+                srcset="
+                  ./images/marketing-370.jpg     370w,
+                  ./images/marketing-370@2x.jpg  740w,
+                  ./images/marketing-370@3x.jpg 1110w
+                "
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 370px, 30vw"
+              />
+              <img src="./images/marketing-450.jpg" alt="Фото Николая Тарасова" />
+            </picture>
             <div class="team-list__holder">
               <h2 class="team-list__title">Николай Тарасов</h2>
               <span class="team-list__caption">Marketing</span>
@@ -377,12 +451,36 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img
-              srcset="./images/UI-designer@2x.jpg 320w, ./images/UI-designer.jpg 640w"
-              src="./images/UI-designer@2x.jpg"
-              alt="Фото Михаила Ермакова"
-              sizes="(min-width: 1600px) 15vw, (min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-            />
+            <picture
+              ><source
+                srcset="
+                  ./images/UI-designer-450.jpg     450w,
+                  ./images/UI-designer-450@2x.jpg  900w,
+                  ./images/UI-designer-450@3x.jpg 1350w
+                "
+                media="(max-width: 767px)"
+                sizes="(min-width: 480px) 450px, 100vw"
+              />
+              <source
+                srcset="
+                  ./images/UI-designer-354.jpg     354w,
+                  ./images/UI-designer-354@2x.jpg  708w,
+                  ./images/UI-designer-354@3x.jpg 1062w
+                "
+                media="(min-width: 768px)"
+                sizes="(min-width: 768px) 354px, 46vw"
+              />
+              <source
+                srcset="
+                  ./images/UI-designer-370.jpg     370w,
+                  ./images/UI-designer-370@2x.jpg  740w,
+                  ./images/UI-designer-370@3x.jpg 1110w
+                "
+                media="(min-width: 1200px)"
+                sizes="(min-width: 1200px) 370px, 30vw"
+              />
+              <img src="./images/UI-designer-450.jpg" alt="Фото Михаила Ермакова" />
+            </picture>
             <div class="team-list__holder">
               <h2 class="team-list__title">Михаил Ермаков</h2>
               <span class="team-list__caption">UI Designer</span>
