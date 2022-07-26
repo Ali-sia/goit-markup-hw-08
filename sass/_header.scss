@@ -156,8 +156,7 @@ body {
     }
 
     &__item:last-child {
-      margin-bottom: clamp(50px, 20%, 302px);
-      // margin-bottom: max(302px, 5%);
+      margin-bottom: auto;
     }
   }
 
@@ -166,6 +165,7 @@ body {
     align-items: center;
 
     margin-left: 88px;
+    margin-right: auto;
 
     &__item:not(:last-child) {
       margin-right: 50px;
@@ -229,6 +229,7 @@ body {
     display: flex;
 
     margin-bottom: 48px;
+
     &__item {
       font-weight: 500;
       font-size: 18px;
