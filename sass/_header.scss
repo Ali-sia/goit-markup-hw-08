@@ -83,12 +83,15 @@ body {
     padding-left: 40px;
 
     width: 100%;
-    min-height: 100vh;
+    min-height: 95vh;
 
     background-color: $main-background-color;
 
     &--is-open {
-      display: block;
+      // display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
   }
 
